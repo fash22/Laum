@@ -1,0 +1,31 @@
+@import '../base/Color'    
+.navbar
+    padding: 0
+    margin: 0 0 4rem 0
+
+    ul
+        list-style-type: none
+        margin: 0
+        padding: 0
+        overflow: hidden
+        background-color: $color-secondary
+        
+    li
+        float: left
+        margin: 0
+        padding: 0
+
+        a.brand
+            background-color: $color-primary
+
+        a.navlink
+            display: inline-block
+            color: $color-initial
+            padding: 14px 16px
+            text-decoration: none
+
+        a.navlink.active
+            background-color: $color-quinary
+
+        a.navlink:hover
+            background-color: $color-quaternary

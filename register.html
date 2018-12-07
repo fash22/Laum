@@ -1,0 +1,98 @@
+<?php require 'scripts/register.php' ?> 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Register Account - Paglaum</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/base/base-style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/components/components.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/atoms.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+<nav class="navbar">
+    <ul>
+        <li><a href="#" class="brand">PAGLAUM</a></li>
+        <li><a href="login.php" class="navlink">Login</a></li>
+        <li><a href="register.html" class="navlink active" >Register</a></li>
+        <li><a href="#" class="navlink" >About</a></li>
+    </ul>
+</nav>
+<main>
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <div class="card label-card">
+                    <form action="user-added.php" method="POST">
+                        <h3>Register New Account</h3>
+                        <hr>
+                        <h4>Account Details</h4>
+                        <div class="row">
+                            <div class="column">
+                                <label for="username">Username</label>
+                                <input type="text" id="username" name="username">
+                            </div>
+                            <div class="column">
+                                <label for="password">Password</label>
+                                <input type="password" id="password" name="password">
+                            </div>
+                            <div class="column">
+                                <label for="vpassword">Verify Password</label>
+                                <input type="password" id="vpassword" name="vpassword">
+                            </div>
+                            <hr>
+                        </div>
+                        <br>
+                        <h4>Personal Info</h4>
+                        <div class="row">
+                            <div class="column">
+                                <label for="firstname">First Name</label>
+                                <input type="text" id="firstname" name="firstname">
+                            </div>
+                            <div class="column">
+                                <label for="middlename">Middle Name</label>
+                                <input type="text" id="middletname" name="middlename">
+                            </div>
+                            <div class="column">
+                                <label for="lastname">Last Name</label>
+                                <input type="text" id="lastname" name="lastname">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <label for="account_type">Account Type</label>
+                                <select id="account_type" name="account_type">
+                                    <option name="account_type" value="admin">Admin Account</option>
+                                    <option name="account_type" value="nurse">Nurse Account</option>
+                                    <option name="account_type" value="patient">Patient Account</option>
+                                </select>
+                            </div>
+                            <div class="column">
+                                <label for="gender">Gender</label>
+                                <select id="gender" name="gender">
+                                    <option name="gender" value="1">Male</option>
+                                    <option name="gender" value="0">Female</option>
+                                </select>
+                            </div>
+                            <div class="column">
+                                <label for="age">Age</label>
+                                <input type="number" id="age" name="age" min="1" max="150" maxlength="3">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="column column-offset-34">
+                                <button type="submit" class="column column-50">SUBMIT DATA</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
